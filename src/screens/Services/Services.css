@@ -1,0 +1,100 @@
+.services-row {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3em 0em;
+}
+.services-card {
+  width: 30%;
+  height: fit-content;
+  margin-right: 2em;
+  margin-bottom: 2em;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  background-color: var(--secondary);
+  padding: 3em 2em;
+}
+.services-card .services-card-content-svg {
+  color: var(--primary);
+}
+.services-card .services-card-content-heading {
+  font-size: var(--heading-font-size);
+  font-family: var(--heading-font-family);
+  color: var(--third);
+  font-weight: 600;
+  padding: 0.5em 0em;
+}
+.services-card .services-card-content-pattren {
+  padding: 1em 0em;
+  display: flex;
+}
+.services-card .services-card-content-pattren-child {
+  width: 40px;
+  height: 5px;
+  border-radius: 50px;
+  background-color: var(--primary);
+  margin-right: 20px;
+}
+.services-card .services-card-content-detail {
+  font-size: var(--normal-font-size);
+  font-family: var(--normal-font-family);
+  color: var(--third);
+  line-height: 35px;
+  letter-spacing: 1px;
+  margin-bottom: 3em;
+}
+.services-card .services-card-content-detail li {
+  list-style-type: disc;
+}
+.services-card .services-card-content-link {
+  font-size: var(--normal-font-size);
+  font-family: var(--normal-font-family);
+  color: var(--third);
+  padding: 0.5em 1em;
+  background-color: var(--primary);
+}
+.services-card .services-card-content-link svg {
+  width: 14.75px;
+  height: 10.372px;
+  margin-left: 10px;
+}
+.services-card .services-card-content-link:hover svg {
+  transition: 200ms;
+  margin-left: 20px;
+}
+
+.services-card:hover {
+  transition: 200ms;
+  background-color: var(--primary);
+}
+.services-card:hover .services-card-content-svg {
+  transition: 200ms;
+  color: var(--secondary);
+}
+.services-card:hover .services-card-content-heading {
+  transition: 200ms;
+  color: var(--secondary);
+}
+.services-card:hover .services-card-content-pattren-child {
+  transition: 200ms;
+  background-color: var(--secondary);
+}
+.services-card:hover .services-card-content-detail {
+  transition: 200ms;
+  color: var(--secondary);
+}
+.services-card:hover .services-card-content-link {
+  transition: 200ms;
+  color: var(--third);
+  background-color: var(--secondary);
+}
+@media (max-width: 1100px) {
+  .services-card {
+    width: 45%;
+  }
+}
+@media (max-width: 700px) {
+  .services-card {
+    width: 100%;
+    margin-right: 0em;
+  }
+}

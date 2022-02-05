@@ -1,0 +1,72 @@
+.ProjectDetailsPage-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ProjectDetailsPage-section-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.5em 0em;
+}
+.ProjectDetailsPage-section-heading {
+  margin: 2em auto;
+}
+.ProjectDetailsPage-btn-primary {
+  margin: 2em 1em;
+  padding: 1em 2em;
+  width: fit-content;
+  background-color: var(--primary);
+  color: var(--third);
+  border-radius: 5px;
+}
+.ProjectDetailsPage-btn-primary:hover {
+  background-color: var(--sixth);
+}
+.ProjectDetailsPage-btn-secondary {
+  margin: 2em 1em;
+  padding: 1em 2em;
+  width: fit-content;
+  background-color: var(--sixth);
+  color: var(--third);
+  border-radius: 5px;
+}
+.ProjectDetailsPage-btn-secondary:hover {
+  background-color: var(--primary);
+}
+.bullets {
+  font-weight: bold;
+}
+.ProjectDetailsPage-project-image {
+  width: 100%;
+  height: 500px;
+  padding: 2em 0em;
+}
+.btn-row {
+  padding: 2em 0em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .ProjectDetailsPage-section {
+    flex-direction: column;
+  }
+  .ProjectDetailsPage-pic-container {
+    display: none;
+  }
+  .ProjectDetailsPage-svg {
+    display: none;
+  }
+  .ProjectDetailsPage-section-content {
+    width: 100%;
+    padding: 0.5em;
+    align-items: center;
+  }
+  .ProjectDetailsPage-section-content * {
+    text-align: center;
+  }
+}

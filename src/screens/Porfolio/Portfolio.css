@@ -1,0 +1,122 @@
+.portfolio-row {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3em 0em;
+}
+.portfolio-card {
+  width: 30%;
+  height: 370px;
+  margin-right: 2em;
+  margin-bottom: 2em;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.portfolio-card-img {
+  width: 100%;
+  height: 370px;
+}
+.portfolio-card-content {
+  position: absolute;
+  display: none;
+  border-radius: 8px;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(15, 191, 97, 0.9);
+  padding: 1.8em;
+}
+.portfolio-card:hover .portfolio-card-content {
+  transition: 300ms ease-in-out;
+  display: block;
+}
+.portfolio-card-content-date {
+  font-size: 20px;
+  font-family: var(--normal-font-family);
+  color: var(--secondary);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.portfolio-card-content-heading {
+  font-size: var(--normal-font-size);
+  font-family: var(--normal-font-family);
+  color: var(--secondary);
+  font-weight: 600;
+  padding: 0.3em 0em;
+  text-transform: capitalize;
+}
+.portfolio-card-content-pattren {
+  padding: 1em 0em;
+  display: flex;
+}
+.portfolio-card-content-pattren-child {
+  width: 40px;
+  height: 5px;
+  border-radius: 50px;
+  background-color: var(--secondary);
+  margin-right: 20px;
+}
+.portfolio-card-content-detail {
+  font-size: var(--normal-font-size);
+  font-family: var(--normal-font-family);
+  color: var(--secondary);
+  line-height: 35px;
+  letter-spacing: 1px;
+  margin-bottom: 2em;
+  height: 135px;
+  overflow: hidden;
+}
+.portfolio-card-content-link {
+  font-size: var(--normal-font-size);
+  font-family: var(--normal-font-family);
+  color: var(--third);
+  background-color: var(--secondary);
+  padding: 0.7em 1.5em;
+}
+.portfolio-card-content-link svg {
+  width: 14.75px;
+  height: 10.372px;
+  margin-left: 10px;
+}
+.portfolio-card-content-link:hover svg {
+  transition: 200ms;
+  margin-left: 20px;
+}
+.portfolio-card-content-link-reverse {
+  font-size: var(--normal-font-size);
+  font-family: var(--normal-font-family);
+  color: var(--secondary);
+  background-color: transparent;
+  padding: 0.7em 1.5em;
+  display: flex;
+  align-items: center;
+  max-width: fit-content;
+  border: 1px solid var(--secondary);
+  margin-left: 1em;
+}
+.portfolio-card-content-link-reverse svg {
+  width: 18px;
+  height: 18px;
+  margin-left: 10px;
+}
+.portfolio-card-content-link-reverse:hover {
+  background-color: var(--secondary);
+  color: var(--third);
+}
+.portfolio-card-content-link-reverse:hover svg {
+  transition: 200ms;
+  margin-left: 20px;
+}
+@media (max-width: 1100px) {
+  .portfolio-card {
+    width: 45%;
+  }
+}
+@media (max-width: 700px) {
+  .portfolio-card {
+    width: 100%;
+    margin-right: 0em;
+  }
+}
