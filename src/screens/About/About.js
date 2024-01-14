@@ -1,5 +1,6 @@
-import React from "react";
 import "./About.css";
+
+import React from "react";
 import aboutPic from "../../Assets/about/aboutPic.jpg";
 import aboutSvg from "../../Assets/about/about-svg.svg";
 import cvFile from "../../Assets/about/Mehfooz-ur-Rehman_CV.docx";
