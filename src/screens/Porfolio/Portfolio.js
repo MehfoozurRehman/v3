@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
 import "./Portfolio.css";
-import projectPic2 from "../../Assets/portfolio/project (2).png";
+
+import React, { useEffect, useState } from "react";
+
 import axios from "axios";
 
 function PortfolioCard({ data }) {
@@ -52,7 +53,6 @@ function PortfolioCard({ data }) {
         }
       )
       .then((res) => {
-        // console.log(res.data.Files[0].Url);
         setImage(res.data.Files[0].Url);
       });
   }, []);
