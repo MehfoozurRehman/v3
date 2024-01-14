@@ -1,5 +1,6 @@
-import React from "react";
 import "./Testimonails.css";
+
+import React from "react";
 import Swiper from "react-id-swiper";
 
 export default function Testimonails() {
@@ -37,9 +38,6 @@ export default function Testimonails() {
                 incredible.
               </p>
               <div className="testimonals-card-name">Jonah G.</div>
-              {/* <div className="testimonals-card-designation">
-                CEO, ABC Company
-              </div> */}
             </div>
           </div>
           <div className="testimonals-slider">
@@ -67,9 +65,6 @@ export default function Testimonails() {
                 great.
               </p>
               <div className="testimonals-card-name">Henrietta D.</div>
-              {/* <div className="testimonals-card-designation">
-                CEO, ABC Company
-              </div> */}
             </div>
           </div>
           <div className="testimonals-slider">
@@ -97,9 +92,6 @@ export default function Testimonails() {
                 it. It's the perfect solution for our business.
               </p>
               <div className="testimonals-card-name">Brook N.</div>
-              {/* <div className="testimonals-card-designation">
-                CEO, ABC Company
-              </div> */}
             </div>
           </div>
           <div className="testimonals-slider">
@@ -128,9 +120,6 @@ export default function Testimonails() {
                 development. I don't know what else to say.
               </p>
               <div className="testimonals-card-name">Philippa S.</div>
-              {/* <div className="testimonals-card-designation">
-                CEO, ABC Company
-              </div> */}
             </div>
           </div>
           <div className="testimonals-slider">
@@ -159,9 +148,6 @@ export default function Testimonails() {
                 development. I will refer everyone I know.
               </p>
               <div className="testimonals-card-name">Sanderson D.</div>
-              {/* <div className="testimonals-card-designation">
-                CEO, ABC Company
-              </div> */}
             </div>
           </div>
         </Swiper>
