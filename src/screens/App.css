@@ -18,29 +18,24 @@ html[data-theme="dark"] {
   --third: #151d41;
   --sixth: #f5f5f5;
 }
-
 *,
 *::after,
 *::before {
   box-sizing: border-box;
   font-family: var(--normal-font-family);
 }
-
 a {
   text-decoration: none;
 }
-
 li {
   list-style: none;
 }
-
 p {
   font-size: 16px;
   font-weight: 300;
   color: var(--third);
   line-height: 30px;
 }
-
 body {
   margin: 0;
   padding: 0;
@@ -49,14 +44,14 @@ body {
   overflow-x: hidden;
 }
 .container {
-  margin: 0em auto;
+  margin: 0 auto;
   width: 100%;
   max-width: 1360px;
-  padding: 0em 3em;
+  padding: 0 3em;
 }
 .section {
   height: fit-content;
-  padding: 3em 0em;
+  padding: 3em 0;
   display: flex;
   flex-direction: column;
 }
@@ -80,7 +75,7 @@ body {
   font-weight: 800;
   color: var(--third);
   font-family: var(--heading-font-family);
-  margin: 0.7em 0em;
+  margin: 0.7em 0;
 }
 .section-content {
   height: fit-content;
@@ -90,6 +85,6 @@ body {
     --heading-font-size: 20px;
   }
   .container {
-    padding: 0em 1em;
+    padding: 0 1em;
   }
 }
