@@ -1,6 +1,8 @@
-import React from "react";
 import "./ProjectDetailsPage.css";
+
+import React from "react";
 import prImg from "../../Assets/portfolio/project (5).png";
+
 const projectImage = prImg;
 
 export default function ProjectDetailsPage() {
