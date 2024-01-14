@@ -1,5 +1,6 @@
-import React from "react";
 import "./Skills.css";
+
+import React from "react";
 
 export default function Skills() {
   return (
