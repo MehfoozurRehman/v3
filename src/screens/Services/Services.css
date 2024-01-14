@@ -2,14 +2,14 @@
   flex: 1;
   display: flex;
   flex-wrap: wrap;
-  margin: 3em 0em;
+  margin: 3em 0;
 }
 .services-card {
   width: 30%;
   height: fit-content;
   margin-right: 2em;
   margin-bottom: 2em;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   background-color: var(--secondary);
   padding: 3em 2em;
 }
@@ -21,10 +21,10 @@
   font-family: var(--heading-font-family);
   color: var(--third);
   font-weight: 600;
-  padding: 0.5em 0em;
+  padding: 0.5em 0;
 }
 .services-card .services-card-content-pattren {
-  padding: 1em 0em;
+  padding: 1em 0;
   display: flex;
 }
 .services-card .services-card-content-pattren-child {
@@ -61,7 +61,6 @@
   transition: 200ms;
   margin-left: 20px;
 }
-
 .services-card:hover {
   transition: 200ms;
   background-color: var(--primary);
@@ -95,6 +94,6 @@
 @media (max-width: 700px) {
   .services-card {
     width: 100%;
-    margin-right: 0em;
+    margin-right: 0;
   }
 }
