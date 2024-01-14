@@ -1,5 +1,6 @@
-import React from "react";
 import "./Blog.css";
+
+import React from "react";
 import blogCardPic1 from "../../Assets/blog/b2.png";
 import blogCardPic2 from "../../Assets/blog/b5.png";
 import blogCardPic3 from "../../Assets/blog/b7.png";
