@@ -1,6 +1,8 @@
-import React from "react";
 import "./Jumbotron.css";
+
+import React from "react";
 import jumbotronPic from "../../Assets/about/aboutPic.jpg";
+
 export default function Jumbotron() {
   return (
     <section className="section" id="jumbotron">
