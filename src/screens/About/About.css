@@ -5,10 +5,10 @@
 }
 .about-pic-container {
   position: relative;
-  padding: 2.5em 0em;
+  padding: 2.5em 0;
   padding-right: 2.5em;
   max-width: 50%;
-  margin: 2em 0em;
+  margin: 2em 0;
   margin-right: 2em;
 }
 .about-pic {
@@ -19,7 +19,7 @@
 .about-svg {
   position: absolute;
   top: 6px;
-  right: 0px;
+  right: 0;
   z-index: -2;
 }
 .about-section-content {
@@ -31,10 +31,10 @@
   padding: 2.5em;
 }
 .about-section-heading {
-  margin: 2em 0em;
+  margin: 2em 0;
 }
 .about-btn {
-  margin: 2em 0em;
+  margin: 2em 0;
   padding: 1em 2em;
   width: fit-content;
   background-color: var(--primary);
