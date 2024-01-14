@@ -1,5 +1,5 @@
 .header {
-  padding: 1em 0em;
+  padding: 1em 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,7 +16,7 @@
 }
 .brand-name span {
   background-color: var(--primary);
-  padding: 0em 0.3em;
+  padding: 0 0.3em;
   border-radius: 5px;
 }
 .nav {
@@ -24,7 +24,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0em 1em;
+  padding: 0 1em;
 }
 .nav-links {
   flex: 1;
@@ -60,7 +60,6 @@ input[type="checkbox"] {
   width: 0;
   visibility: hidden;
 }
-
 .label {
   cursor: pointer;
   text-indent: -9999px;
@@ -72,7 +71,6 @@ input[type="checkbox"] {
   position: relative;
   user-select: none;
 }
-
 .label:after {
   content: "";
   position: absolute;
@@ -85,20 +83,16 @@ input[type="checkbox"] {
   transition: 1000ms;
   user-select: none;
 }
-
 input:checked + .label {
   background: var(--primary);
 }
-
 input:checked + .label:after {
   left: calc(100% - 5px);
   transform: translateX(-100%);
 }
-
 .label:active:after {
   width: 45px;
 }
-
 html.transition,
 html.transition *,
 html.transition *:before,
@@ -142,7 +136,6 @@ html.transition *:after {
 .menu-btn__burger::after {
   transform: translateY(13px);
 }
-/* ANIMATION */
 .menu-btn.open .menu-btn__burger {
   transform: translateX(-50px);
   background: transparent;
@@ -168,16 +161,16 @@ html.transition *:after {
     display: none;
     flex-direction: column;
     width: 100% !important;
-    padding: 0em;
+    padding: 0;
   }
   .nav-links {
     flex-direction: column;
     width: 100% !important;
-    padding: 0em;
+    padding: 0;
   }
   .nav-link {
     flex: 1;
-    margin: 1em 0em;
+    margin: 1em 0;
     display: flex;
     justify-content: flex-start;
   }
