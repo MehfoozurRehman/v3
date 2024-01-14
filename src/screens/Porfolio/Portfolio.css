@@ -2,7 +2,7 @@
   flex: 1;
   display: flex;
   flex-wrap: wrap;
-  margin: 3em 0em;
+  margin: 3em 0;
 }
 .portfolio-card {
   width: 30%;
@@ -21,8 +21,8 @@
   position: absolute;
   display: none;
   border-radius: 8px;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   background-color: rgb(15, 191, 97, 0.9);
@@ -44,11 +44,11 @@
   font-family: var(--normal-font-family);
   color: var(--secondary);
   font-weight: 600;
-  padding: 0.3em 0em;
+  padding: 0.3em 0;
   text-transform: capitalize;
 }
 .portfolio-card-content-pattren {
-  padding: 1em 0em;
+  padding: 1em 0;
   display: flex;
 }
 .portfolio-card-content-pattren-child {
@@ -117,6 +117,6 @@
 @media (max-width: 700px) {
   .portfolio-card {
     width: 100%;
-    margin-right: 0em;
+    margin-right: 0;
   }
 }
