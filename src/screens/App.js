@@ -1,17 +1,19 @@
-import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Header from "./Header/Header";
-import Footer from "./Footer/Footer";
-import Contact from "./Contact/Contact";
-import Blog from "./Blog/Blog";
-import Testimonails from "./Testimonails/Testimonails";
-import Services from "./Services/Services";
-import Portfolio from "./Porfolio/Portfolio";
-import Skills from "./Skills/Skills";
+
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+
 import About from "./About/About";
+import Blog from "./Blog/Blog";
+import Contact from "./Contact/Contact";
+import Footer from "./Footer/Footer";
+import Header from "./Header/Header";
 import Jumbotron from "./Jumbotron/Jumbotron";
+import Portfolio from "./Porfolio/Portfolio";
 import ProjectDetailsPage from "./ProjectDetailsPage/ProjectDetailsPage";
+import React from "react";
+import Services from "./Services/Services";
+import Skills from "./Skills/Skills";
+import Testimonails from "./Testimonails/Testimonails";
 
 function App() {
   return (
