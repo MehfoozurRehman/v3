@@ -1,46 +1,47 @@
-# Portfolio v3
+# Developer Portfolio v3
 
-A modern, responsive portfolio website built with React. This project showcases your work, skills, and experience to potential employers and clients. Designed for performance, accessibility, and a great user experience.
+Personal developer portfolio website featuring project showcase carousels, responsive UI, and email contact integration built with React, Swiper.js, and Firebase Hosting.
 
-## Features
-- Responsive design for all devices
-- Project and experience showcase
-- Contact form with email integration
-- Smooth animations and transitions
-- Easy to customize and extend
+## Overview
+
+`v3` is the third iteration of Mehfooz-ur-Rehman's personal portfolio, featuring touch-friendly interactive project sliders (Swiper), direct email inquiry routing (EmailJS), and Firebase deployment workflows.
 
 ## Tech Stack
-- React
-- React Router
-- EmailJS
-- Swiper.js
-- Axios
+
+- **Frontend Core**: React (v17), React Router v5
+- **Carousels & Media**: Swiper.js (v7), `react-id-swiper`
+- **Contact & Network**: `emailjs-com`, Axios
+- **Build Tooling**: Create React App (`react-scripts` v4)
+- **Hosting**: Firebase Hosting (`firebase.json`)
+
+## Prerequisites
+
+- Node.js (v16 or v18 recommended)
+- Package manager (`pnpm`, `yarn`, or `npm`)
 
 ## Getting Started
 
-### Development
-```bash
-yarn install
-yarn start
-```
+1. **Install dependencies**:
+   ```bash
+   pnpm install
+   # or
+   npm install
+   ```
 
-### Build
-```bash
-yarn build
-```
+2. **Run the Development Server**:
+   ```bash
+   npm start
+   ```
 
-### Deploy
-```bash
-yarn deploy
-```
+3. **Access the Portfolio**:
+   Open `http://localhost:3000` in your web browser.
 
-## Scripts
-- `start`: Start development server
-- `build`: Build for production
-- `deploy`: Deploy to Firebase
+## Available Scripts
 
-## License
-MIT
+- `npm start` - Starts the React development server.
+- `npm run build` - Creates an optimized production bundle.
+- `npm run deploy` - Builds and deploys the website directly to Firebase Hosting.
 
----
-For more details, see the code and open issues for contributions or bug reports.
+## Author
+
+Created by [Mehfooz-ur-Rehman](https://github.com/MehfoozurRehman).
