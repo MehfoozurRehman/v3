@@ -1,47 +1,43 @@
 # Developer Portfolio v3
 
-Personal developer portfolio website featuring project showcase carousels, responsive UI, and email contact integration built with React, Swiper.js, and Firebase Hosting.
+Third version of a personal developer portfolio: a React single-page site with swipeable project sliders, sections for services, skills, testimonials and a blog, and a contact form that sends email through EmailJS.
 
-## Overview
+**Status:** Working demo. The sections render and the contact form is wired to EmailJS, but the repo has no tests, the blog and testimonial content are hard-coded, and no live URL is recorded.
 
-`v3` is the third iteration of Mehfooz-ur-Rehman's personal portfolio, featuring touch-friendly interactive project sliders (Swiper), direct email inquiry routing (EmailJS), and Firebase deployment workflows.
+## The problem
 
-## Tech Stack
+A developer needs a public site that shows their work, the services they offer and the people they have worked with, and that lets visitors send an inquiry without running a back end. This is the third iteration of that site.
 
-- **Frontend Core**: React (v17), React Router v5
-- **Carousels & Media**: Swiper.js (v7), `react-id-swiper`
-- **Contact & Network**: `emailjs-com`, Axios
-- **Build Tooling**: Create React App (`react-scripts` v4)
-- **Hosting**: Firebase Hosting (`firebase.json`)
+## What it does
 
-## Prerequisites
+- Project showcase with Swiper sliders on the portfolio section (`src/screens/Porfolio/Portfolio.js`).
+- Project details page for individual projects (`src/screens/ProjectDetailsPage/`).
+- Sections for about, services, skills, testimonials and a blog, each with its own component and stylesheet under `src/screens/`.
+- Contact form that sends through `emailjs-com` (`src/screens/Contact/Contact.js`).
+- Header, jumbotron and footer shared across the page.
 
-- Node.js (v16 or v18 recommended)
-- Package manager (`pnpm`, `yarn`, or `npm`)
+## How it's built
 
-## Getting Started
+- React 17 with React Router v5 and plain CSS, one stylesheet per screen.
+- Each section is a folder in `src/screens/`, and `App.js` assembles them.
+- Carousels use Swiper 7 through `react-id-swiper`.
+- The contact form posts from the browser with EmailJS, so there is no server code in this repo.
+- Built with Create React App (`react-scripts` 5). The start, build and test scripts pass `--openssl-legacy-provider`, which is needed on newer Node versions.
+- Firebase Hosting is configured through `firebase.json` and `.firebaserc`.
 
-1. **Install dependencies**:
-   ```bash
-   pnpm install
-   # or
-   npm install
-   ```
+## Running it locally
 
-2. **Run the Development Server**:
-   ```bash
-   npm start
-   ```
+```bash
+pnpm install   # or npm install / yarn
+pnpm start     # or npm start, then open http://localhost:3000
+```
 
-3. **Access the Portfolio**:
-   Open `http://localhost:3000` in your web browser.
+Other scripts: `build` (production bundle), `test` (react-scripts test runner), `firebase` (runs `firebase deploy`) and `deploy` (build, then firebase).
 
-## Available Scripts
+## What's left
 
-- `npm start` - Starts the React development server.
-- `npm run build` - Creates an optimized production bundle.
-- `npm run deploy` - Builds and deploys the website directly to Firebase Hosting.
-
-## Author
-
-Created by [Mehfooz-ur-Rehman](https://github.com/MehfoozurRehman).
+- No test files exist, although the test script is configured.
+- Blog posts and testimonials are hard-coded in their components.
+- The EmailJS IDs are written in `Contact.js` rather than read from configuration.
+- The app is on React 17 and React Router 5, which are both behind current releases.
+- No live URL is recorded in the repo.
