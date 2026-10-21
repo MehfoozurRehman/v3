@@ -12,7 +12,6 @@ function PortfolioCard({ data }) {
   useEffect(() => {
     axios
       .get(data.languages_url && data.languages_url, {
-        Authorization: "Bearer " + "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",
       })
       .then((res) => {
         console.log(res.data);
@@ -134,7 +133,6 @@ export default function Portfolio() {
   useEffect(() => {
     axios
       .get("https://api.github.com/users/MehfoozurRehman/repos", {
-        Authorization: "Bearer " + "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",
       })
       .then((res) => {
         setProjects(res.data);

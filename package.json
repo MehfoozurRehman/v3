@@ -13,8 +13,8 @@
     "swiper": "^7.4.1"
   },
   "scripts": {
-    "start": "react-scripts  --openssl-legacy-provider start",
-    "build": "react-scripts  --openssl-legacy-provider build",
+    "start": "node api.js && react-scripts  --openssl-legacy-provider start",
+    "build": "node api.js && react-scripts  --openssl-legacy-provider build",
     "test": "react-scripts  --openssl-legacy-provider test",
     "eject": "react-scripts  --openssl-legacy-provider eject",
     "firebase": "firebase deploy",
